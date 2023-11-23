@@ -32,17 +32,16 @@ def get_category():
 def prepare_items(response):
     products = []
 
-    products_raw = response.get('data', {}).get('products', None)
+    products_raw = response.get('data', {}).get('products')
 
-    if products_raw != None and len(products_raw) > 0:
+    if products_raw and len(products_raw) > 0:
         for product in products_raw:
             products.append({
-                'brand': product.get('brand', None),
-                'name': product.get('name', None),
-                'sale': product.get('sale', None),
-                'priceU': float(product.get('priceU', None)) / 100 if product.get('priceU', None) != None else None,
-                'salePriceU': float(product.get('salePriceU', None)) / 100 if product.get('salePriceU',
-                                                                                          None) != None else None,
+                'brand': product.get('brand'),
+                'name': product.get('name'),
+                'sale': product.get('sale'),
+                'priceU': float(product.get('priceU', 0)) / 100,
+                'salePriceU': float(product.get('salePriceU', 0)) / 100,
             })
 
     return products
