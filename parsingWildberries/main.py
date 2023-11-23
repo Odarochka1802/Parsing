@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 
 proxies = {
+    'https': 'http://host:173.245.49.172:80	'
 }
 
 
@@ -22,26 +23,24 @@ def get_category():
         "sec-ch-ua-mobile": "?0",
         "sec-ch-ua-platform": "^\^"
     }
-    response = requests.get(url, headers=headers, proxies=proxies)
-    if response.status_code == 200:
-        return response.json()
-    else:
-        raise Exception(f"Failed to fetch data: {response.status_code}")
+    response = requests.get(url=url, headers=headers, proxies=proxies)
+    return response.json()
 
 
 def prepare_items(response):
     products = []
 
-    products_raw = response.get('data', {}).get('products')
+    products_raw = response.get('data', {}).get('products', None)
 
-    if products_raw and len(products_raw) > 0:
+    if products_raw != None and len(products_raw) > 0:
         for product in products_raw:
             products.append({
-                'brand': product.get('brand'),
-                'name': product.get('name'),
-                'sale': product.get('sale'),
-                'priceU': float(product.get('priceU', 0)) / 100,
-                'salePriceU': float(product.get('salePriceU', 0)) / 100,
+                'brand': product.get('brand', None),
+                'name': product.get('name', None),
+                'sale': product.get('sale', None),
+                'priceU': float(product.get('priceU', None)) / 100 if product.get('priceU', None) != None else None,
+                'salePriceU': float(product.get('salePriceU', None)) / 100 if product.get('salePriceU',
+                                                                                          None) != None else None,
             })
 
     return products
@@ -50,8 +49,7 @@ def prepare_items(response):
 def main():
     response = get_category()
     products = prepare_items(response)
-    df = pd.DataFrame(products)
-    print(df)
+    print(products)
 
 
 if __name__ == '__main__':

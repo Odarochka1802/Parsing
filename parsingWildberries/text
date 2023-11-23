@@ -1,0 +1,251 @@
+(venv) C:\Users\odaro\pythonProject\Seminar2>git commit -am "Add cheking status is 200"
+[master 111c2b7] Add cheking status is 200
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git commit -am "Remove chek None"
+[master ee07ef2] Remove chek None
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git commit -am "Add pandas DataFrame"
+[master 9d0e3d9] Add pandas DataFrame
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git log
+commit 9d0e3d9249ae513392abb1a6f389bd03b8ec4cf3 (HEAD -> master)
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 16:12:50 2023 +0300
+
+    Add pandas DataFrame
+
+commit ee07ef288b715d0024548f81408802c18f81845a
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 16:12:17 2023 +0300
+
+    Remove chek None
+
+commit 111c2b7ea61874a5be04e878c95ebbd2ec70f16b
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 16:10:58 2023 +0300
+
+    Add cheking status is 200
+
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+(END)
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+(END)
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+(END)
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git show f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..26d3352
+--- /dev/null
++++ b/.idea/.gitignore
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git show commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+fatal: ambiguous argument 'commit': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git show f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000..26d3352
+--- /dev/null
++++ b/.idea/.gitignore
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git show 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+diff --git a/parsingWildberries/main.py b/parsingWildberries/main.py
+index 409903e..faa6db1 100644
+--- a/parsingWildberries/main.py
++++ b/parsingWildberries/main.py
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git log
+commit 9d0e3d9249ae513392abb1a6f389bd03b8ec4cf3 (HEAD -> master)
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 16:12:50 2023 +0300
+
+    Add pandas DataFrame
+
+commit ee07ef288b715d0024548f81408802c18f81845a
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 16:12:17 2023 +0300
+
+    Remove chek None
+
+commit 111c2b7ea61874a5be04e878c95ebbd2ec70f16b
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 16:10:58 2023 +0300
+
+    Add cheking status is 200
+
+commit 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:54:38 2023 +0300
+
+    Change proxies
+
+commit f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+Author: odarochka <odarochka1802@gmail.com>
+Date:   Thu Nov 23 15:42:47 2023 +0300
+
+    Add function
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git revert f5cf32dcaa2ad0e4d2eb97920a2d36cab7f11790
+CONFLICT (modify/delete): parsingWildberries/main.py deleted in (em
+pty tree) and modified in HEAD.  Version HEAD of parsingWildberries/main.py left in tree.
+error: could not revert f5cf32d... Add function
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git revert 1fb96b7b7de17601ed7936e5d0474e8162537ba1
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git revert 111c2b7ea61874a5be04e878c95ebbd2ec70f16b
+error: Reverting is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: revert failed
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git reset --soft HEAD~
+1   # Отменяем последний коммит, оставляя изменения в рабочем каталоге и индексе
+fatal: Cannot do soft reset with paths.
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git restore .
+    # Восстанавливаем рабочий каталог из индекса
+error: pathspec '#' did not match any file(s) known to git
+error: pathspec 'Восстанавливаем' did not match any file(s) known to git
+error: pathspec 'рабочий' did not match any file(s) known to git
+error: pathspec 'каталог' did not match any file(s) known to git
+error: pathspec 'из' did not match any file(s) known to git
+error: pathspec 'индекса' did not match any file(s) known to git
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>
+(venv) C:\Users\odaro\pythonProject\Seminar2>git reset --mixed HEAD
+~1  # Отменяем предпоследний коммит, оставляя изменения в рабочем каталоге, но не в индексе
+warning: --mixed with paths is deprecated; use 'git reset -- <paths>' instead.
+Unstaged changes after reset:
+U       parsingWildberries/main.py
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git restore .
+    # Восстанавливаем рабочий каталог из индекса
+error: pathspec '#' did not match any file(s) known to git
+error: pathspec 'Восстанавливаем' did not match any file(s) known to git
+error: pathspec 'рабочий' did not match any file(s) known to git
+error: pathspec 'каталог' did not match any file(s) known to git
+error: pathspec 'из' did not match any file(s) known to git
+error: pathspec 'индекса' did not match any file(s) known to git
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>
+(venv) C:\Users\odaro\pythonProject\Seminar2>git reset --hard HEAD~1   # Отменяем первый коммит, удаляя все изменения
+fatal: Cannot do hard reset with paths.
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git reset --soft HEAD~1
+fatal: Cannot do a soft reset in the middle of a merge.
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>git remote add origin https://github.com/Odarochka1802/Parsing.git
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>  git branch -M main
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>  git push -u origin main
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (32/32), 4.21 KiB | 862.00 KiB/s, done.
+Total 32 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/Odarochka1802/Parsing.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+(venv) C:\Users\odaro\pythonProject\Seminar2>
