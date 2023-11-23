@@ -50,7 +50,8 @@ def prepare_items(response):
 def main():
     response = get_category()
     products = prepare_items(response)
-    print(products)
+    df = pd.DataFrame(products)
+    print(df)
 
 
 if __name__ == '__main__':
