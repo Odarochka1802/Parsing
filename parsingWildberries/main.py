@@ -2,7 +2,6 @@ import pandas as pd
 import requests
 
 proxies = {
-    'https': 'http://host:179.108.169.20:8080'
 }
 
 
@@ -23,8 +22,11 @@ def get_category():
         "sec-ch-ua-mobile": "?0",
         "sec-ch-ua-platform": "^\^"
     }
-    response = requests.get(url=url, headers=headers, proxies=proxies)
-    return response.json()
+    response = requests.get(url, headers=headers, proxies=proxies)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        raise Exception(f"Failed to fetch data: {response.status_code}")
 
 
 def prepare_items(response):
