@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 
 proxies = {
-    'https': 'http://host:173.245.49.172:80	'
+    'https': 'http://host:179.108.169.20:8080'
 }
 
 
